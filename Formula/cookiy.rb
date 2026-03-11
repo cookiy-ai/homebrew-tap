@@ -4,7 +4,7 @@ class Cookiy < Formula
   version "1.7.5"
 
   on_arm do
-    url "https://github.com/cookiy-ai/homebrew-tap/releases/download/cookiy-v1.7.5/cookiy-v1.7.5-darwin-arm64.tar.gz"
+    url "https://raw.githubusercontent.com/cookiy-ai/homebrew-tap/main/Artifacts/cookiy-v1.7.5-darwin-arm64.tar.gz"
     sha256 "08ebd839d1b1e8104971169911f013bfbcb2f6211f75a49fcb9baa948cf64123"
   end
 
