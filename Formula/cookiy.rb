@@ -4,8 +4,8 @@ class Cookiy < Formula
   version "1.7.5"
 
   on_arm do
-    url "https://raw.githubusercontent.com/cookiy-ai/homebrew-tap/main/Artifacts/cookiy-v1.7.5-darwin-arm64.tar.gz"
-    sha256 "08ebd839d1b1e8104971169911f013bfbcb2f6211f75a49fcb9baa948cf64123"
+    url "https://raw.githubusercontent.com/cookiy-ai/homebrew-tap/main/Artifacts/cookiy-v1.7.5-darwin-arm64.tar.xz"
+    sha256 "6fbe28350fd0dea3444e616fa926f92a029e6cfb51c4aa53a9c522104d291990"
   end
 
   on_intel do
