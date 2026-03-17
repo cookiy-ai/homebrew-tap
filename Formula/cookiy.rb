@@ -1,11 +1,11 @@
 class Cookiy < Formula
   desc "One-command setup for Cookiy MCP server in your AI coding clients"
   homepage "https://cookiy.ai"
-  version "1.7.5"
+  version "1.7.7"
 
   on_arm do
-    url "https://raw.githubusercontent.com/cookiy-ai/homebrew-tap/main/Artifacts/cookiy-v1.7.5-darwin-arm64.tar.xz"
-    sha256 "6fbe28350fd0dea3444e616fa926f92a029e6cfb51c4aa53a9c522104d291990"
+    url "https://github.com/cookiy-ai/homebrew-tap/releases/download/cookiy-v1.7.7/cookiy-v1.7.7-darwin-arm64.tar.gz"
+    sha256 "a041c41058ffe3c9172f34464c7cf10c6d1f6b04c5e0a11c0cb2e1e99b508097"
   end
 
   on_intel do
@@ -24,10 +24,11 @@ class Cookiy < Formula
     <<~EOS
       The Homebrew install auto-configured Cookiy MCP for the default production environment.
 
-      To switch environments later, run:
-        cookiy dev -y
-        cookiy preview -y
-        cookiy staging -y
+      To re-run production setup later, run:
+        cookiy -y
+
+      For advanced non-production or custom targets, run:
+        cookiy --help
     EOS
   end
 
