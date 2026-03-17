@@ -1,11 +1,11 @@
 class Cookiy < Formula
-  desc "One-command setup for Cookiy MCP server in your AI coding clients"
+  desc "One-command bootstrap for Cookiy local skills and MCP in your AI coding clients"
   homepage "https://cookiy.ai"
-  version "1.7.7"
+  version "1.7.9"
 
   on_arm do
-    url "https://github.com/cookiy-ai/homebrew-tap/releases/download/cookiy-v1.7.7/cookiy-v1.7.7-darwin-arm64.tar.gz"
-    sha256 "a041c41058ffe3c9172f34464c7cf10c6d1f6b04c5e0a11c0cb2e1e99b508097"
+    url "https://github.com/cookiy-ai/homebrew-tap/releases/download/cookiy-v1.7.9/cookiy-v1.7.9-darwin-arm64.tar.gz"
+    sha256 "bd5e071eb7b0cb2502ef0dea814b8b8af333b2a2f3b63695fb0277e9af9de76a"
   end
 
   on_intel do
@@ -22,7 +22,10 @@ class Cookiy < Formula
 
   def caveats
     <<~EOS
-      The Homebrew install auto-configured Cookiy MCP for the default production environment.
+      The Homebrew install ran the Cookiy bootstrap flow for the default production environment.
+
+      On supported clients, Cookiy installs a local skill copy first and then configures MCP.
+      On other clients, it falls back to MCP-only setup.
 
       To re-run production setup later, run:
         cookiy -y
