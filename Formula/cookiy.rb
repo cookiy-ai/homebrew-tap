@@ -1,11 +1,11 @@
 class Cookiy < Formula
   desc "One-command bootstrap for Cookiy local skills and MCP in your AI coding clients"
   homepage "https://cookiy.ai"
-  version "1.7.9"
+  version "1.7.11"
 
   on_arm do
-    url "https://github.com/cookiy-ai/homebrew-tap/releases/download/cookiy-v1.7.9/cookiy-v1.7.9-darwin-arm64.tar.gz"
-    sha256 "bd5e071eb7b0cb2502ef0dea814b8b8af333b2a2f3b63695fb0277e9af9de76a"
+    url "https://github.com/cookiy-ai/homebrew-tap/releases/download/cookiy-v1.7.11/cookiy-v1.7.11-darwin-arm64.tar.gz"
+    sha256 "4710348be0340029fa8f46bb58cfba27e0afdf7c8a8f83584eb0dc8c5e0e5808"
   end
 
   on_intel do
